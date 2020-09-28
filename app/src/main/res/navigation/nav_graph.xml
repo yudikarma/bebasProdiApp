@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/spalshFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.haekal.bebasprodiapp.ui.login.LoginFragment"
+        tools:layout="@layout/fragment_login"
+        android:label="" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrasiFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/registrasiFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_forgotPasswordFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/forgotPasswordFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_spalshFragment2"
+            app:destination="@id/spalshFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrasiFragment"
+        android:name="com.haekal.bebasprodiapp.ui.registrasi.RegistrasiFragment"
+        android:label=""
+        tools:layout="@layout/fragment_registrasi">
+        <argument android:name="rule" app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.haekal.bebasprodiapp.ui.forgot.ForgotPasswordFragment"
+        tools:layout="@layout/fragment_forgot_password"
+        android:label="ForgotPasswordFragment" />
+    <fragment
+        android:id="@+id/spalshFragment"
+        android:name="com.haekal.bebasprodiapp.ui.splash.SplashFragment"
+        android:label="fragment_spalsh"
+        tools:layout="@layout/fragment_spalsh" >
+        <action
+            android:id="@+id/action_spalshFragment2_to_loginFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>

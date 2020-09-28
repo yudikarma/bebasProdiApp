@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.haekal.bebasprodiapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="com.haekal.bebasprodiapp.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.haekal.bebasprodiapp.ui.Pick.kabupaten.PickKabupatenActivity"></activity>
+        <activity android:name="com.haekal.bebasprodiapp.ui.Pick.mobil.ListMobilActivity" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.Pick.mobil.show.ShowMobilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.picture.DetailPictureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.Pick.mobil.create.CreateMobilActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.signature.CreateSignatureActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.Pick.maps.PickMapsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.bebas_prodi.dosen.create.CreateBebasProdiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.bebas_prodi.dosen.show.ShowBebasProdiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.bebas_prodi.mahasiswa.edit.CreateKonfirmasiBebasProdiActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.haekal.bebasprodiapp.ui.bebas_prodi.mahasiswa.show.ShowKonfirmasiBebasProdiActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.haekal.bebasprodiapp.ui.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.haekal.bebasprodiapp.ui.splash.SplashFragment" />
+        <activity android:name="com.haekal.bebasprodiapp.ui.dashboard.container_mahasiswa.ContainerDashboardMahasiswaActivity" />
+        <activity android:name="com.haekal.bebasprodiapp.ui.dashboard.container_dosen.ContaienrDahsboardDosenActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/maps_key" />
+
+
+    </application>
+
+</manifest>

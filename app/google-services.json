@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "595958818922",
+    "firebase_url": "https://sistem-bebas-prodi.firebaseio.com",
+    "project_id": "sistem-bebas-prodi",
+    "storage_bucket": "sistem-bebas-prodi.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595958818922:android:4053b8d8dc24b4b7840213",
+        "android_client_info": {
+          "package_name": "com.haekal.bebas_prodi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq18NRpVjoQbYAZrga2QgWT8McNBWeiKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595958818922:android:adc5e87b2aebd871840213",
+        "android_client_info": {
+          "package_name": "com.haekal.bebas_prodi_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq18NRpVjoQbYAZrga2QgWT8McNBWeiKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595958818922:android:e8a6415a906686e0840213",
+        "android_client_info": {
+          "package_name": "com.haekal.bebasprodiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq18NRpVjoQbYAZrga2QgWT8McNBWeiKw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595958818922-9qor4j042le7f0n4rks2r7s4t7semhdp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

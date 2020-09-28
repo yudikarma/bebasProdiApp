@@ -1,0 +1,145 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
+
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+apply plugin: 'kotlin-kapt'
+
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.haekal.bebasprodiapp"
+        minSdkVersion 22
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir { dirs 'libs' }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    //firebase
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-core:17.2.1'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.firebase:firebase-storage:19.1.0'
+    implementation 'com.google.firebase:firebase-database:19.2.0'
+
+    //maps
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'net.sharewire:google-maps-clustering:0.1.3'
+
+
+    //google material
+    implementation 'com.google.android.material:material:1.2.0-alpha03'
+
+    //recyclerview
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha01'
+
+    //annotations
+    implementation 'com.android.support:support-annotations:28.0.0'
+    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+
+    //anko
+    implementation "org.jetbrains.anko:anko-commons:$rootProject.anko_commons"
+    implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation "org.jetbrains.anko:anko-appcompat-v7:$anko_version"
+
+    //shimmer layout for loading content
+    implementation "com.facebook.shimmer:shimmer:$rootProject.shimmer"
+
+    //navigation
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0'
+    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0'
+
+    //glide
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    kapt "com.github.bumptech.glide:compiler:$rootProject.glideVersion"
+    implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+
+    //gson seriable
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    //circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //lottie animation
+    implementation 'com.airbnb.android:lottie:3.3.0'
+
+    //permission helper
+    //handle permission
+    implementation "org.permissionsdispatcher:permissionsdispatcher:$rootProject.permission_dispatcher"
+    kapt "org.permissionsdispatcher:permissionsdispatcher-processor:$rootProject.permission_dispatcher"
+
+    // Image
+    implementation "com.github.jkwiecien:EasyImage:$easyimage"
+
+
+    //event trigger
+    implementation 'org.greenrobot:eventbus:3.1.1'
+
+    //tanda tangan
+    implementation 'com.github.gcacace:signature-pad:1.2.1'
+
+    //chart
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$retrofit"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_gson"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_scalars"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okhttp_log"
+
+    // Maps
+    implementation "com.google.android.gms:play-services-location:$play_location"
+    implementation "com.google.android.gms:play-services-maps:$play_maps"
+    implementation "com.google.android.libraries.places:places:$play_places"
+
+
+
+    // Rx
+    //implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+
+
+    implementation(name: "$obb_core", ext: 'aar')
+    implementation(name: "$obb_styles", ext: 'aar')
+
+
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.2'
+
+    implementation(name: "$obb_style", ext: 'aar')
+    implementation(name: "$dkp_core", ext: 'aar')
+
+
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
